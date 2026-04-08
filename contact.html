@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Syuniqe Energies</title>
+  <meta name="description" content="Contact Syuniqe Energies for pre-orders, demos, dealer inquiries, custom B2B deployments, and support." />
+  <link rel="icon" href="assets/favicon.ico" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- DYNAMIC ISLAND NAVIGATION -->
+  <div class="navbar-wrapper">
+    <nav class="navbar">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/NavLogo.png" alt="Syuniqe Energies">
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <a href="#preorder" class="btn btn--primary btn--sm">Pre-Order</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container page-hero-inner reveal">
+        <div class="section-label">Contact Us</div>
+        <h1>Start your Syuniqe&nbsp;journey</h1>
+        <p>
+          Pre-order a product, book a live demo, request a custom quote, or explore dealer partnership opportunities.
+        </p>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+         TABBED FORMS — ONE AT A TIME
+         ════════════════════════════════════════ -->
+    <section class="section" id="contact-forms">
+      <div class="container">
+
+        <div class="contact-tabs reveal" id="contactTabs">
+          <button class="contact-tab active" data-tab="preorder">Pre-Order</button>
+          <button class="contact-tab" data-tab="knowmore">Know More</button>
+          <button class="contact-tab" data-tab="dealer">Dealer Network</button>
+        </div>
+
+        <!-- PRE-ORDER FORM -->
+        <div class="contact-panel active" id="preorder" data-panel="preorder">
+          <div class="form-card reveal">
+            <div style="margin-bottom:32px;">
+              <h3 style="margin-bottom:8px;">Pre-Order Now</h3>
+              <p style="color:var(--ink-secondary);font-size:.95rem;">Reserve your Syuniqe system and share your use case.</p>
+            </div>
+            <form class="form-grid" action="https://formspree.io/f/xjgppzyg" method="post">
+              <div>
+                <label for="preName">Full Name</label>
+                <input class="input" id="preName" type="text" placeholder="Your full name" name="fullname"/>
+              </div>
+              <div>
+                <label for="prePhone">Phone Number</label>
+                <input class="input" id="prePhone" type="tel" placeholder="+91 98XXXXXXXX" name="phone"/>
+              </div>
+              <div>
+                <label for="preEmail">Email Address</label>
+                <input class="input" id="preEmail" type="email" placeholder="you@example.com" name="email" />
+              </div>
+              <div>
+                <label for="preCity">City / State</label>
+                <input class="input" id="preCity" type="text" placeholder="Delhi, NCR" name="city"/>
+              </div>
+              <div>
+                <label for="preProduct">Interested Product</label>
+                <select class="input" id="preProduct" name="product">
+                  <option value="">Select a product</option>
+                  <option>PowerHub Mini</option>
+                  <option>PowerHub</option>
+                  <option>PowerHub Pro</option>
+                  <option>PowerRack</option>
+                  <option>Expansion Battery</option>
+                  <option>Not sure yet</option>
+                </select>
+              </div>
+              <div>
+                <label for="preUseCase">Primary Use Case</label>
+                <select class="input" id="preUseCase" name="use">
+                  <option value="">Select a use case</option>
+                  <option>Home Backup</option>
+                  <option>Shop / Small Business</option>
+                  <option>School / Institution</option>
+                  <option>Resort / Hospitality</option>
+                  <option>Camping / Travel</option>
+                  <option>Medical / Essential Backup</option>
+                  <option>Custom B2B</option>
+                </select>
+              </div>
+              <div>
+                <label for="preHours">Expected Backup Hours</label>
+                <input class="input" id="preHours" type="text" placeholder="e.g. 4 to 6 hours" name="hours"/>
+              </div>
+              <div>
+                <label for="preSolar">Solar Preference</label>
+                <select class="input" id="preSolar" name="solar">
+                  <option value="">Select preference</option>
+                  <option>Yes, I want solar</option>
+                  <option>Maybe later</option>
+                  <option>Grid-only is fine</option>
+                </select>
+              </div>
+              <div class="full">
+                <label for="preLoads">Appliances / loads to power</label>
+                <textarea class="input" id="preLoads" rows="4" placeholder="e.g. 2 fans, 1 TV, router, 4 LED lights, fridge" name="load"></textarea>
+              </div>
+              <div class="full">
+                <label for="preNotes">Anything else we should know?</label>
+                <textarea class="input" id="preNotes" rows="3" placeholder="Usage pattern, urgency, location, etc." name="comments"></textarea>
+              </div>
+              <div class="full" style="display:flex;gap:12px;flex-wrap:wrap;">
+                <button type="submit" class="btn btn--primary">Submit Pre-Order Interest</button>
+                <a href="https://wa.me/919899500774" class="btn btn--secondary">WhatsApp Us</a>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- KNOW MORE FORM (merged demo + quote) -->
+        <div class="contact-panel" id="knowmore" data-panel="knowmore">
+          <div class="form-card reveal">
+            <div style="margin-bottom:32px;">
+              <h3 style="margin-bottom:8px;">Know More / Get Custom Quote</h3>
+              <p style="color:var(--ink-secondary);font-size:.95rem;">Request a live walkthrough, ask product questions, or get a custom quote for your setup.</p>
+            </div>
+            <form class="form-grid">
+              <div>
+                <label for="kmName">Full Name</label>
+                <input class="input" id="kmName" type="text" placeholder="Your full name" />
+              </div>
+              <div>
+                <label for="kmPhone">Phone Number</label>
+                <input class="input" id="kmPhone" type="tel" placeholder="+91 98XXXXXXXX" />
+              </div>
+              <div>
+                <label for="kmEmail">Email Address</label>
+                <input class="input" id="kmEmail" type="email" placeholder="you@example.com" />
+              </div>
+              <div>
+                <label for="kmProduct">Product of Interest</label>
+                <select class="input" id="kmProduct">
+                  <option value="">Select a product</option>
+                  <option>PowerHub Mini</option>
+                  <option>PowerHub</option>
+                  <option>PowerHub Pro</option>
+                  <option>PowerRack</option>
+                  <option>Need recommendation</option>
+                </select>
+              </div>
+              <div>
+                <label for="kmMode">How to Connect?</label>
+                <select class="input" id="kmMode">
+                  <option value="">Select mode</option>
+                  <option>Phone Call</option>
+                  <option>Video Call</option>
+                  <option>WhatsApp Call</option>
+                  <option>In-Person Demo</option>
+                </select>
+              </div>
+              <div>
+                <label for="kmCity">City / State</label>
+                <input class="input" id="kmCity" type="text" placeholder="Mumbai, Maharashtra" />
+              </div>
+              <div class="full">
+                <label for="kmNeed">Tell us about your need</label>
+                <textarea class="input" id="kmNeed" rows="4" placeholder="Describe your use case, load, outage hours, etc."></textarea>
+              </div>
+              <div class="full" style="display:flex;gap:12px;flex-wrap:wrap;">
+                <button type="submit" class="btn btn--primary">Send Enquiry</button>
+                <a href="https://wa.me/919899500774" class="btn btn--secondary">WhatsApp Us</a>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- QUOTE FORM -->
+        <div class="contact-panel" id="quote" data-panel="quote">
+          <div class="form-card reveal">
+            <div style="margin-bottom:32px;">
+              <h3 style="margin-bottom:8px;">Request a Quote</h3>
+              <p style="color:var(--ink-secondary);font-size:.95rem;">For PowerHub Pro, PowerRack, expansion batteries, and custom B2B deployments.</p>
+            </div>
+            <form class="form-grid">
+              <div>
+                <label for="quoteName">Full Name</label>
+                <input class="input" id="quoteName" type="text" placeholder="Your full name" />
+              </div>
+              <div>
+                <label for="quoteCompany">Company / Organization</label>
+                <input class="input" id="quoteCompany" type="text" placeholder="Organization name" />
+              </div>
+              <div>
+                <label for="quotePhone">Phone Number</label>
+                <input class="input" id="quotePhone" type="tel" placeholder="+91 98XXXXXXXX" />
+              </div>
+              <div>
+                <label for="quoteEmail">Email Address</label>
+                <input class="input" id="quoteEmail" type="email" placeholder="you@example.com" />
+              </div>
+              <div>
+                <label for="quoteCity">City / State</label>
+                <input class="input" id="quoteCity" type="text" placeholder="Mumbai, Maharashtra" />
+              </div>
+              <div>
+                <label for="quoteType">Inquiry Type</label>
+                <select class="input" id="quoteType">
+                  <option value="">Select inquiry type</option>
+                  <option>PowerHub Pro</option>
+                  <option>PowerRack</option>
+                  <option>Expansion Battery</option>
+                  <option>School / Institution</option>
+                  <option>Hotel / Resort</option>
+                  <option>Dealer / Partner</option>
+                  <option>Custom B2B Deployment</option>
+                </select>
+              </div>
+              <div>
+                <label for="quoteLoad">Expected Load</label>
+                <input class="input" id="quoteLoad" type="text" placeholder="e.g. 2kW continuous" />
+              </div>
+              <div>
+                <label for="quoteRuntime">Expected Runtime</label>
+                <input class="input" id="quoteRuntime" type="text" placeholder="e.g. 6 hours daily backup" />
+              </div>
+              <div class="full">
+                <label for="quoteDetails">Project Details</label>
+                <textarea class="input" id="quoteDetails" rows="5" placeholder="Describe the site, loads, usage pattern, scale, and any special requirements."></textarea>
+              </div>
+              <div class="full" style="display:flex;gap:12px;flex-wrap:wrap;">
+                <button type="submit" class="btn btn--primary">Request Quote</button>
+                <a href="https://wa.me/919899500774" class="btn btn--secondary">Discuss on WhatsApp</a>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- DEALER FORM -->
+        <div class="contact-panel" id="dealer" data-panel="dealer">
+          <div class="form-card reveal">
+            <div style="margin-bottom:32px;">
+              <h3 style="margin-bottom:8px;">Become a Syuniqe Dealer</h3>
+              <p style="color:var(--ink-secondary);font-size:.95rem;">Join our launch network as a dealer, distributor, installer, or channel partner.</p>
+            </div>
+            <form class="form-grid">
+              <div>
+                <label for="dealerName">Full Name</label>
+                <input class="input" id="dealerName" type="text" placeholder="Your full name" />
+              </div>
+              <div>
+                <label for="dealerPhone">Phone Number</label>
+                <input class="input" id="dealerPhone" type="tel" placeholder="+91 98XXXXXXXX" />
+              </div>
+              <div>
+                <label for="dealerEmail">Email Address</label>
+                <input class="input" id="dealerEmail" type="email" placeholder="you@example.com" />
+              </div>
+              <div>
+                <label for="dealerCity">City / Region</label>
+                <input class="input" id="dealerCity" type="text" placeholder="Bengaluru, Karnataka" />
+              </div>
+              <div>
+                <label for="dealerCompany">Business Name</label>
+                <input class="input" id="dealerCompany" type="text" placeholder="Your business name" />
+              </div>
+              <div>
+                <label for="dealerType">Business Type</label>
+                <select class="input" id="dealerType">
+                  <option value="">Select type</option>
+                  <option>Dealer</option>
+                  <option>Distributor</option>
+                  <option>Installer</option>
+                  <option>Retailer</option>
+                  <option>Channel Partner</option>
+                </select>
+              </div>
+              <div class="full">
+                <label for="dealerExperience">Relevant Experience</label>
+                <textarea class="input" id="dealerExperience" rows="4" placeholder="Market, customer base, current categories, distribution strength."></textarea>
+              </div>
+              <div class="full" style="display:flex;gap:12px;flex-wrap:wrap;">
+                <button type="submit" class="btn btn--primary">Submit Dealer Interest</button>
+                <a href="https://wa.me/919899500774" class="btn btn--secondary">WhatsApp Partnership Team</a>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- QUICK CONTACT CTA -->
+    <section class="section" style="background: rgba(255,255,255,0.7);">
+      <div class="container">
+        <div class="section-header centered reveal">
+          <div class="section-label">Need a Faster Response?</div>
+          <h2>Reach us directly</h2>
+          <p>For quick product guidance and pre-order questions, our team is available Mon–Sat, 10 AM – 7 PM.</p>
+        </div>
+        <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;" class="reveal">
+          <a href="https://wa.me/919899500774" class="btn btn--primary btn--lg" style="display:flex;align-items:center;gap:10px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Chat on WhatsApp
+          </a>
+          <a href="mailto:info@syuniqe.com" class="btn btn--secondary btn--lg" style="display:flex;align-items:center;gap:10px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email Us
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+<script>
+const form = document.querySelector("form");
+
+form.addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  const data = new FormData(form);
+
+  const response = await fetch(form.action, {
+    method: "POST",
+    body: data,
+    headers: {
+      'Accept': 'application/json'
+    }
+  });
+
+  if (response.ok) {
+    alert("Thanks! We'll contact you soon.");
+    form.reset();
+  } else {
+    alert("Oops! Something went wrong.");
+  }
+});
+</script>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo-white.png" alt="Syuniqe Energies" />
+        <p>Energy Anytime. Anywhere.<br>Smart portable energy for modern India.</p>
+        <div style="margin-top:20px;display:flex;flex-direction:column;gap:10px;font-size:0.88rem;">
+          <div style="display:flex;align-items:center;gap:8px;color:rgba(255,255,255,0.65);">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.22 2.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.16 6.16l1.27-.54a2 2 0 012.11.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            +91 9899500774
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;color:rgba(255,255,255,0.65);">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            info@syuniqe.com
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;color:rgba(255,255,255,0.65);">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Mon–Sat &middot; 10 AM – 7 PM
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Action Links</h4>
+        <ul>
+          <li><a href="#preorder">Pre-Order</a></li>
+          <li><a href="#demo">Book Demo</a></li>
+          <li><a href="#quote">Request Quote</a></li>
+          <li><a href="#dealer">Become Dealer</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get Started</h4>
+        <ul>
+          <li><a href="contact.html#preorder">Pre-Order Now</a></li>
+          <li><a href="contact.html#demo">Know More</a></li>
+          <li><a href="contact.html#dealer">Become Dealer</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">© 2026 Syuniqe Energies. All rights reserved.</div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/919899500774" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
