@@ -1897,4 +1897,21 @@ select.input {
   .gt-item, .gt-item:nth-child(even) { flex-direction: row; }
   .gt-content { width: calc(100% - 70px); margin-left: auto; text-align: left !important; }
   .gt-item:nth-child(odd):hover .gt-content { border-right-color: transparent; border-left-color: var(--brand); }
+   .navbar.open .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  }
+
+  .navbar.open .nav-actions .btn {
+    display: block;
+    margin-top: 10px;
+  }
 }
