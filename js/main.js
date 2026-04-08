@@ -70,7 +70,7 @@ const products = {
 /* ───── NAVIGATION ───── */
 function initNav() {
   const toggle = document.querySelector(".nav-toggle");
-  const nav = document.querySelector(".nav");
+  const nav = document.querySelector(".navbar");
   if (!toggle || !nav) return;
   toggle.addEventListener("click", () => nav.classList.toggle("open"));
 
